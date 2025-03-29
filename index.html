@@ -289,12 +289,21 @@
                 document.getElementById("reveal").style.display = "block";
             }
         }
-
+/*
         function revealMain() {
             document.getElementById("reveal").style.display = "none";
             document.getElementById("main-reveal").style.display = "block";
             document.getElementById("mainQuestionText").innerText = selectedQuestion.main;
             speak(`The main question was: ${selectedQuestion.main}`);
+        }*/
+
+        function revealMain() {
+            document.getElementById("reveal").style.display = "none";
+            document.getElementById("main-reveal").style.display = "block";
+            document.getElementById("mainQuestionText").innerText = selectedQuestion.main;
+        
+            // Speak it out loud
+            speak(`The main question is: ${selectedQuestion.main}`);
         }
 
         function revealImposter() {
